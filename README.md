@@ -13,7 +13,7 @@ Desarrollado bajo estándares académicos de ingeniería, el proyecto implementa
 | Autor | Rol Principal | GitHub |
 | :--- | :--- | :--- |
 | **Eder Lucio Vicente Medina** | Desarrollador fullstack (devops) | [@evicente3](https://github.com/evicente3) |
-| **Marco Antonio Salas Zegarra** | Desarrollador backend (programador) | [@msalasz](https://github.com/msalasz) |
+| **Marco Antonio Salas Zegarra** | Desarrollador backend (programador) | [@msalasz](https://github.com/gkeras) |
 | **Kevin Peralta Llasa** | Desarrollador frontend (programador y diseñador) | [@kperaltal](https://github.com/kperaltal) |
 | **Percy Molina Soncco** |Administrador de SGBD (Base de datos) | [@pmolinas](https://github.com/pmolinas) |
 
