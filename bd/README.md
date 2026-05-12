@@ -17,7 +17,7 @@
 | Entregables | URL |
 |-------------|-----|
 | Repositorio | [https://github.com/evicente3/MGS.git](https://github.com/evicente3/MGS.git) |
-| Informe     | [https://github.com/evicente3/MGS/blob/main/informes/DAW_lab05_bd.pdf](https://github.com/evicente3/MGS/blob/main/informes/DAW_lab05_bd.pdf) |
+| Informe     | [[https://github.com/evicente3/MGS/blob/main/informes/DAW_lab05_bd.pdf](https://github.com/evicente3/MGS/blob/main/informes/DAW_lab05_bd.pdf](https://github.com/evicente3/MGS/blob/main/informes/lab05_daw.pdf)) |
 | Supabase    | [https://supabase.com/dashboard/project/zdjjpofxtnfbjagjhbia] |
 
 ---
