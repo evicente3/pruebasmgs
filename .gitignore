@@ -1,0 +1,11 @@
+venv/
+
+# Ignorar archivos compilados de Python en cualquier carpeta
+**/__pycache__/
+*.pyc
+
+# Bases de datos locales
+*.sqlite3
+
+# Exclusiones de seguridad
+.env
