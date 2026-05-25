@@ -1,5 +1,4 @@
-# Laboratorio 06: Backend - Gestión de Suscripciones con Django
-
+# Laboratorio 06: Django admin y Modelos
 ## Autores
 
 | Autores                     | Rol                                   | Porcentaje |
