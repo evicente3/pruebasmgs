@@ -7,5 +7,4 @@ venv/
 # Bases de datos locales
 *.sqlite3
 
-# Exclusiones de seguridad
-.env
+
