@@ -1,4 +1,5 @@
 from rest_framework import viewsets, permissions
+from rest_framework.permissions import IsAuthenticated
 from django.db.models import Prefetch
 
 from .models import (
@@ -15,7 +16,7 @@ from .serializers import (
 
 
 class UserProfileViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [IsAuthenticated]
     lookup_field = 'pk'
 
     def get_serializer_class(self):
@@ -35,15 +36,13 @@ class UserProfileViewSet(viewsets.ModelViewSet):
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    queryset = Category.objects.all()
     serializer_class = CategorySerializer
-
-    def get_queryset(self):
-        return Category.objects.all()
+    permission_classes = [IsAuthenticated]
 
 
 class ServiceViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = ServiceSerializer
 
     def get_queryset(self):
@@ -51,7 +50,7 @@ class ServiceViewSet(viewsets.ModelViewSet):
 
 
 class CurrencyViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [IsAuthenticated]
     serializer_class = CurrencySerializer
 
     def get_queryset(self):
@@ -59,7 +58,7 @@ class CurrencyViewSet(viewsets.ModelViewSet):
 
 
 class SubscriptionViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
         if self.action in ('create', 'update', 'partial_update'):
@@ -83,7 +82,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
 
 class SubscriptionUserViewSet(viewsets.ModelViewSet):
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
         if self.action in ('create', 'update', 'partial_update'):
@@ -96,3 +95,4 @@ class SubscriptionUserViewSet(viewsets.ModelViewSet):
                 'subscription__service', 'user'
             )
         return SubscriptionUser.objects.all()
+
